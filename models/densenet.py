@@ -6,7 +6,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-__all__ = ['densenet100bc', 'densenet190bc']
+__all__ = ['densenet100bc', 'densenet130bc',  'densenet190bc']
 
 
 class Bottleneck(nn.Module):
@@ -92,15 +92,22 @@ class DenseNet(nn.Module):
         return out
 
 
+
 def densenet100bc(num_classes):
     return DenseNet(
         Bottleneck,
         depth=100,
-        growth_rate=12,
+        growth_rate=13,
         num_classes=num_classes
     )
 
-
+def densenet130bc(num_classes):
+    return DenseNet(
+        Bottleneck,
+        depth=130,
+        growth_rate=23,
+        num_classes=num_classes
+    )
 def densenet190bc(num_classes):
     return DenseNet(
         Bottleneck,

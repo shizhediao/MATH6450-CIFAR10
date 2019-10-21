@@ -1,10 +1,10 @@
 # net architecture
-architecture: densenet100bc
+architecture: densenet130bc
 
 # log and checkpoint
 data_path: ./data
 ckpt_path: ./
-ckpt_name: densenet100bc
+ckpt_name: densenet130bc
 
 # datasets
 num_classes: 10
@@ -17,7 +17,7 @@ epochs: 300
 batch_size: 256
 test_batch: 200
 eval_freq: 2
-workers: 4
+workers: 8
 
 # optimizer
 optimize:
