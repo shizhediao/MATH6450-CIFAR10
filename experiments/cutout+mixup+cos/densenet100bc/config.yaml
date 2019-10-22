@@ -13,8 +13,8 @@ dataset: cifar10
 # training parameters
 use_gpu: True
 input_size: 32
-epochs: 300
-batch_size: 256
+epochs: 400
+batch_size: 64
 test_batch: 200
 eval_freq: 2
 workers: 4

@@ -97,7 +97,7 @@ def densenet100bc(num_classes):
     return DenseNet(
         Bottleneck,
         depth=100,
-        growth_rate=13,
+        growth_rate=12,
         num_classes=num_classes
     )
 
